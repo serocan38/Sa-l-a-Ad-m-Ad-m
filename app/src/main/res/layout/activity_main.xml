@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorPrimary"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/ustImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#3EB150"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/yakilanKaloriTw"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arkaplan_shape"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:paddingBottom="15dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/yurunenKmTw"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/yurunenKmTw" />
+
+    <TextView
+        android:id="@+id/yurunenKmTw"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/arkaplan_shape"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:paddingBottom="15dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/adimSayarTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bugünki Adım Sayısı"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ustImage" />
+
+    <TextView
+        android:id="@+id/rekorTw"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/arkaplan_shape"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/adimSayarBilgiTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/adimSayarTw"
+        app:layout_constraintStart_toStartOf="@+id/adimSayarTw"
+        app:layout_constraintTop_toBottomOf="@+id/adimSayarTw" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sağlığa Adım Adım"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/ayarlarButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ustImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adimSayarBilgiTw">
+        <HorizontalScrollView
+            android:id="@+id/nested"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/son1Tw"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/son2Tw"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/son3Tw"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/son4Tw"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/son5Tw"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/son6Tw"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/son7Tw"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+         </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0.3dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="#C5C1C1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ustImage" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Yürünen Mesafe"
+        android:textColor="#3EB150"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/yurunenKmTw" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yakılan Kalori"
+        android:textColor="#3EB150"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Rekor Adım Sayısı"
+        android:textColor="#3EB150"
+        app:layout_constraintBottom_toTopOf="@+id/rekorTw"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/modTf"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TextView
+        android:id="@+id/oneriTw"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/arkaplan_shape"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:paddingBottom="15dp"
+        android:text="5000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/yakilanKaloriTw"
+        app:layout_constraintStart_toStartOf="@+id/yurunenKmTw"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bugün atman gereken adım sayısı"
+        android:textColor="#3EB150"
+        app:layout_constraintEnd_toEndOf="@+id/oneriTw"
+        app:layout_constraintStart_toStartOf="@+id/oneriTw"
+        app:layout_constraintTop_toTopOf="@+id/oneriTw" />
+
+    <TextView
+        android:id="@+id/modTf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="true"
+        android:textColor="#E04063"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/oneriTw"
+        app:layout_constraintStart_toStartOf="@+id/oneriTw"
+        app:layout_constraintTop_toBottomOf="@+id/oneriTw" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

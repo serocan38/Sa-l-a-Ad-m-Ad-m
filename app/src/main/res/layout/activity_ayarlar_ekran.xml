@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyarlarEkran">
+
+    <EditText
+        android:id="@+id/hedefKiloEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/hedefKiloTw"
+        app:layout_constraintEnd_toEndOf="@+id/kiloEt"
+        app:layout_constraintStart_toStartOf="@+id/kiloEt"
+        app:layout_constraintTop_toTopOf="@+id/hedefKiloTw"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_ayarlar_hesap_ayarlariTextView" />
+
+    <TextView
+        android:id="@+id/menu_ayarlar_hesap_ayarlariTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="Hesap Ayarları"
+        android:textColor="#2e2e2e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kiloTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Kilo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_ayarlar_hesap_ayarlariTextView" />
+
+    <TextView
+        android:id="@+id/hedefKiloTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Düşmek İstediğiniz Kilo"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioSex" />
+
+    <EditText
+        android:id="@+id/kiloEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/kiloTw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kiloTw"
+        app:layout_constraintTop_toTopOf="@+id/kiloTw" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kiloEt">
+
+        <RadioButton
+            android:id="@+id/radioSaglik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sağlık Modu" />
+
+        <RadioButton
+            android:id="@+id/radioKilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilo Verme Modu" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/kaydetButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Kaydet"
+        android:background="@drawable/arka_plan_shape"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uyarımsgTw" />
+
+    <TextView
+        android:id="@+id/uyarımsgTw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lütfen hedeflenen Kilonuzu giriniz!!"
+        android:textColor="#DC143C"
+        android:textColorLink="#DC143C"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/kaydetButon"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/kaydetButon"
+        app:layout_constraintTop_toBottomOf="@+id/hedefKiloEt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "717813560645",
+    "firebase_url": "https://sagliga-adim-adim.firebaseio.com",
+    "project_id": "sagliga-adim-adim",
+    "storage_bucket": "sagliga-adim-adim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717813560645:android:c7bf685539b209f7497a2c",
+        "android_client_info": {
+          "package_name": "com.serefcan.sagligaadimadim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717813560645-tuom90jta8qd01d22rbfr5hud1e35fpg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serefcan.sagligaadimadim",
+            "certificate_hash": "9927335baddb511b86f7717f39a335aa9ad8b5c0"
+          }
+        },
+        {
+          "client_id": "717813560645-ks9ippg8ph59i1j0tv37po7c5gvau5co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn020C1JuBh_hu9Vaa7zAC5Cqb2xuoruk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717813560645-ks9ippg8ph59i1j0tv37po7c5gvau5co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
